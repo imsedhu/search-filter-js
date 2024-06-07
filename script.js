@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.querySelector('#search-box');
   const itemsCategory = document.querySelector('#item-category');
   const itemContainer = document.querySelector('#items-container');
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function(){
       return;
     }
 
-    items.forEach(item => {
+    filterItems.forEach(item => {
       const divElement = document.createElement('div');
       divElement.classList.add('item');
       divElement.innerHTML = `
