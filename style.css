@@ -25,7 +25,10 @@ h1{
 #search-box{
   width: 40%;
   padding: 15px;
-
+}
+#search-box::placeholder{
+  font-size: 20px;
+  
 }
 #item-category{
   padding: 15px;
