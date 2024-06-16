@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
       divElement.classList.add('item');
       divElement.innerHTML = `
       <h2>${item.name}</h2>
-      <p>category:${item.category}</p>
-      <p>${item.description}</p>
+      <p class="category">category:${item.category}</p>
+      <p class="desc">${item.description}</p>
       `;
       itemContainer.appendChild(divElement);
     })
