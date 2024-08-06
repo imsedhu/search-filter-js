@@ -5,20 +5,25 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
-  background-color: rgb(116, 236, 238);
+  background-color: black;
+  color: white;
 }
 .item{
-  padding: 20px;
-  border: 2px solid black;
+  padding: 15px;
   margin: 0 auto;
-  width: 500px;
+  width: 300px;
   margin-bottom: 8px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
 }
 h1{
   text-align: center;
-  text-transform: uppercase;
   padding-block: 2rem;
-  color: crimson;
+  color:rgb(203, 203, 203);
+  text-decoration: underline;
+  font-size: 50px;
 }
 .inputs{
   display: flex;
@@ -31,15 +36,31 @@ h1{
   width: 40%;
   padding: 15px;
   border-radius: 10px;
+  opacity: 0.8;
+  box-shadow: 1px 1px 10px white;
+  cursor: pointer;
 }
 #search-box::placeholder{
   font-size: 20px;
-  
+  color: black;
 }
+
+#search-box:active{
+  border: none;
+}
+
 #item-category{
-  padding: 15px;
-  border-radius: 10px;
+  padding: 10px 10px 10px 10px ;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 1px 1px 10px white;
+  opacity: 0.8;
+  cursor: pointer;
 }
+#item-category > option{
+  font-size: 20px;
+}
+
 h2,
 .category,
 .desc{
@@ -52,4 +73,9 @@ h2{
 }
 .category{
   margin-bottom: 8px;
+}
+
+#items-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
